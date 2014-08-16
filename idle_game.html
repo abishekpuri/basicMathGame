@@ -10,7 +10,7 @@
 			<header>
 				<h1 class="center">Idle Mathematics Game!!</h1>
 				<h3 class="center"><u>Progress in game</u> </h3>
-				<progress id="progressbar" value = "0" max="10"></progress>
+				<progress id="progressbar" value = "0" max="200"></progress>
 				<p  class="center"id="Knowledge"> </p>
 			</header>
 			<div id="menu">
@@ -22,10 +22,12 @@
 			</div>
 			<div id="contentup">
 				<h1 id="MathProgressTitle" >Addition(starting)</h1><br><br>
-				<img id="MathProgressImg" src="Addition.gif" onclick="increaseKnowledge();additionQuestion();"/>
+				<img id="MathProgressImg" src="img/Addition.gif" onclick="increaseKnowledge(1);"/>
 				<br><br><br><br><br>
-				<h1 id="addition">Hello</h1>
-				<p id="multiplication">Hello</p>
+			</div>
+			<div id="questionArea">
+				<h1 id="addition">Nothing for now</h1><button type="submit" onclick="additionAnswer();">Check Answer</button>
+				<p id="multiplication"></p>
 			</div>
 		</div>
 	</body>
